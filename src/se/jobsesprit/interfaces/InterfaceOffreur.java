@@ -6,7 +6,7 @@ public interface InterfaceOffreur<T> {
     public void ajouterOffreur(T t);
     public List<T> listeDesOffreurs();
     public void modifierOffreur(T t); 
-    public T rechercherOffreur(int id); 
-    public void supprimerOffreur(int id);
+    public T rechercherOffreur(String matricule); // Changer le paramètre "id" en "matricule"
+    public void supprimerOffreur(String matricule); // Changer le paramètre "id" en "matricule"
 }
 
