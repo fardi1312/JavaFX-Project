@@ -3,10 +3,12 @@ package se.jobsesprit.entities;
 public class Offreurs {
 
     private int id;
+    private String matricule;
     private String nom;
     private String prenom;
-    private String dateInscription; // Change the type to String
-    private byte[] image; // Ajout de l'attribut image de type String
+    private String dateInscription;
+    private byte[] image;
+ 
 
     public Offreurs() {
     }
@@ -31,48 +33,67 @@ public class Offreurs {
         this.image = image;
     }
 
+    // Constructeur avec le nouvel attribut matricule
+    public Offreurs(int id, String matricule, String nom, String prenom, String dateInscription, byte[] image) {
+        this.id = id;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.dateInscription = dateInscription;
+        this.image = image;
+        this.matricule = matricule;
+    }
+
+    // Getter et Setter pour l'attribut matricule
+    public String getMatricule() {
+        return matricule;
+    }
+
+    public void setMatricule(String matricule) {
+        this.matricule = matricule;
+    }
+
     public int getId() {
         return id;
-    }
-
-    public String getNom() {
-        return nom;
-    }
-
-    public String getPrenom() {
-        return prenom;
-    }
-
-    public String getDateInscription() {
-        return dateInscription;
-    }
-
-    public byte[] getImage() { // Getter pour l'attribut image
-        return image;
     }
 
     public void setId(int id) {
         this.id = id;
     }
 
+    public String getNom() {
+        return nom;
+    }
+
     public void setNom(String nom) {
         this.nom = nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
     }
 
     public void setPrenom(String prenom) {
         this.prenom = prenom;
     }
 
+    public String getDateInscription() {
+        return dateInscription;
+    }
+
     public void setDateInscription(String dateInscription) {
         this.dateInscription = dateInscription;
     }
 
-    public void setImage(byte[] image) { // Setter pour l'attribut image
+    public byte[] getImage() {
+        return image;
+    }
+
+    public void setImage(byte[] image) {
         this.image = image;
     }
 
     @Override
     public String toString() {
-        return "Offreurs{" + "id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", dateInscription=" + dateInscription + ", image=" + image + '}';
+        return "Offreurs{" + "id=" + id + ", nom=" + nom + ", prenom=" + prenom + ", dateInscription=" + dateInscription + ", image=" + image + ", matricule=" + matricule + '}';
     }
 }
