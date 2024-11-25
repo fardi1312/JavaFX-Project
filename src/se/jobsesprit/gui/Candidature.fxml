@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="614.0" prefWidth="1126.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.jobsesprit.gui.CandidatureController">
+   <children>
+      <BorderPane layoutX="-6.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="226.0" layoutY="20.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #032d4d;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="quit" fitHeight="23.0" fitWidth="22.0" layoutX="1104.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@poweroff.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <HBox layoutX="190.0" layoutY="1.0" prefHeight="41.0" prefWidth="835.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="176.0" styleClass="menuItem" text="Ajouter">
+                           <graphic>
+                              <ImageView fx:id="addpng" fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@addpng.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Mp" mnemonicParsing="false" prefHeight="39.0" prefWidth="187.0" styleClass="menuItem" text="Modifier">
+                           <graphic>
+                              <ImageView fx:id="modifypng" fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@modifypng.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="189.0" styleClass="menuItem" text="Supprimer">
+                           <graphic>
+                              <ImageView fx:id="deletepng" fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@deletepng.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children></HBox>
+                  <Label fx:id="menu" layoutX="8.0" layoutY="35.0" prefHeight="22.0" prefWidth="265.0" text="MENU" textFill="#b7b7b7" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="853.0" AnchorPane.topAnchor="36.0">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@menupng.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="menuback" layoutX="8.0" layoutY="36.0" prefHeight="21.0" prefWidth="80.0" text="MENU" textFill="#b7b7b7">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@menupng.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: #032d4d;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="333.0" prefWidth="176.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#GoToPortfolio" prefHeight="38.0" prefWidth="177.0" styleClass="sidebaritem" text="Mon portfolio">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="180.0" styleClass="sidebaritem" text="Offres">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="46.0" prefWidth="176.0" styleClass="sidebaritem" text="Covoiturage">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="176.0" text="Candidatures">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="551.0" prefWidth="956.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tab_offre" layoutX="116.0" layoutY="105.0" prefHeight="386.0" prefWidth="622.0" style="-fx-background-color: #97b9f0;">
+                    <columns>
+                      <TableColumn fx:id="tab_titre" prefWidth="75.0" text="titre" />
+                      <TableColumn fx:id="tab_desc" prefWidth="96.0" text="description" />
+                        <TableColumn fx:id="tab_typeStage" prefWidth="101.0" text="type de stage" />
+                        <TableColumn fx:id="tab_secteur" prefWidth="76.0" text="secteur" />
+                        <TableColumn fx:id="tab_fonction" prefWidth="81.0" text="fonction" />
+                        <TableColumn fx:id="tab_date" prefWidth="108.0" text="date d'inscription" />
+                        <TableColumn fx:id="tab_image" prefWidth="90.0" text="images" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="784.0" layoutY="251.0" mnemonicParsing="false" onAction="#GoToAddCv" prefHeight="48.0" prefWidth="137.0" style="-fx-background-color: #3e81ad;" text="Valider" textFill="WHITE" />
+                  <Label layoutX="416.0" layoutY="32.0" text="Choisir une offre :">
+                     <font>
+                        <Font name="Rockwell" size="21.0" />
+                     </font>
+                  </Label>
+                  <Line endX="108.0" layoutX="496.0" layoutY="66.0" startX="-100.0" />
+               </children>
+            </AnchorPane>
+         </center>
+
+      </BorderPane>
+   </children>
+</AnchorPane>

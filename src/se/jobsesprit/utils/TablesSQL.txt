@@ -1,0 +1,236 @@
+--------------BD=JOBSESPRIT--------------------
+
+CREATE TABLE UserEtudiant (
+    id INT PRIMARY KEY,
+    phone INT,
+    role VARCHAR(20) DEFAULT 'ETUDIANT',
+    email VARCHAR(255) NOT NULL,
+    motDePasse VARCHAR(255) NOT NULL,
+    firstName VARCHAR(255),
+    lastName VARCHAR(255),
+    username VARCHAR(255),
+    image VARCHAR(255),
+    age INT,
+    rate DOUBLE
+);
+
+CREATE TABLE UserEntreprise (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    phone INT,
+    role VARCHAR(20) NOT NULL DEFAULT 'ENTREPRISE',
+    email VARCHAR(255) NOT NULL,
+    motDePasse VARCHAR(255) NOT NULL,
+    nomEntreprise VARCHAR(255),
+    localisation VARCHAR(255),
+    image VARCHAR(255)
+);
+
+
+-- Table Candidature
+CREATE TABLE Candidature (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255),
+    cv BLOB,
+);
+
+-- Table Covoiturage
+CREATE TABLE Covoiturage (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    heureDepart VARCHAR(255),
+    lieuDepart VARCHAR(255),
+    lieuArrivee VARCHAR(255),
+    prix DECIMAL(10, 2),
+    nombrePlacesDisponibles INT,
+    image VARCHAR(1100)
+);
+
+-- Table Entreprise
+CREATE TABLE Entreprise (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    image VARCHAR(1100),
+    bio TEXT,
+    description TEXT,
+    secteur VARCHAR(255),
+    specialisation VARCHAR(255),
+    nombreEmployes INT
+);
+
+-- Table Entretien
+CREATE TABLE Entretien (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255),
+    idEntreprise INT,
+    idAnnonce INT,
+    date VARCHAR(255),
+    heure VARCHAR(255),
+    localisation VARCHAR(255),
+    image VARCHAR(1100)
+);
+
+-- Table Evenement
+CREATE TABLE Evenement (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    description TEXT, 
+    typeEv VARCHAR(255),
+    heure VARCHAR(255),
+    date VARCHAR(255),
+    lieu VARCHAR(255),
+    payant BOOLEAN,
+    nombreDePlaces INT,
+    image VARCHAR(1100)
+);
+
+-- Table Offre
+CREATE TABLE Offre (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titre VARCHAR(255),
+    description TEXT,
+    typeStage ENUM('FORMATION_HUMAINE_ET_S', 'IMMERSION_EN_ENTREPRISE', 'STAGE_INGENIEUR'),
+    secteurs VARCHAR(255),
+     fonction VARCHAR(255),
+    dateInscription VARCHAR(1100),
+    images longtext
+);
+
+   
+   
+   
+
+-- Table Portfolio
+CREATE TABLE Portfolio (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titre VARCHAR(255),
+    description TEXT,
+    image VARCHAR(1100),
+    secteur VARCHAR(255),
+    date VARCHAR(255)
+);
+
+-- Table Profil
+CREATE TABLE Profil (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    image VARCHAR(1100),
+    username VARCHAR(255),
+    bio TEXT,
+    description TEXT,
+    formation TEXT,
+    licences TEXT,
+    competence TEXT
+);
+
+
+///////////////////////////////////////
+--------------BD=JOBSESPRIT--------------------
+
+CREATE TABLE UserEtudiant (
+    id INT PRIMARY KEY,
+    phone INT,
+    role VARCHAR(20) DEFAULT 'ETUDIANT',
+    email VARCHAR(255) NOT NULL,
+    motDePasse VARCHAR(255) NOT NULL,
+    firstName VARCHAR(255),
+    lastName VARCHAR(255),
+    username VARCHAR(255),
+    image VARCHAR(255),
+    age INT,
+    rate DOUBLE
+);
+
+CREATE TABLE UserEntreprise (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    phone INT,
+    role VARCHAR(20) NOT NULL DEFAULT 'ENTREPRISE',
+    email VARCHAR(255) NOT NULL,
+    motDePasse VARCHAR(255) NOT NULL,
+    nomEntreprise VARCHAR(255),
+    localisation VARCHAR(255),
+    image VARCHAR(255)
+);
+
+
+-- Table Candidature
+CREATE TABLE Candidature (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255),
+    cv BLOB
+);
+
+-- Table Covoiturage
+CREATE TABLE Covoiturage (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    heureDepart VARCHAR(255),
+    lieuDepart VARCHAR(255),
+    lieuArrivee VARCHAR(255),
+    prix DECIMAL(10, 2),
+    nombrePlacesDisponibles INT,
+    image VARCHAR(1100)
+);
+
+-- Table Entreprise
+CREATE TABLE Entreprise (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    image VARCHAR(1100),
+    bio TEXT,
+    description TEXT,
+    secteur VARCHAR(255),
+    specialisation VARCHAR(255),
+    nombreEmployes INT
+);
+
+-- Table Entretien
+CREATE TABLE Entretien (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255),
+    idEntreprise INT,
+    idAnnonce INT,
+    date VARCHAR(255),
+    heure VARCHAR(255),
+    localisation VARCHAR(255),
+    image VARCHAR(1100)
+);
+
+-- Table Evenement
+CREATE TABLE Evenement (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    description TEXT, 
+    typeEv VARCHAR(255),
+    heure VARCHAR(255),
+    date VARCHAR(255),
+    lieu VARCHAR(255),
+    payant BOOLEAN,
+    nombreDePlaces INT,
+    image VARCHAR(1100)
+);
+
+-- Table Offre
+CREATE TABLE Offre (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titre VARCHAR(255),
+    description TEXT,
+    typeStage ENUM('FORMATION_HUMAINE_ET_S', 'IMMERSION_EN_ENTREPRISE', 'STAGE_INGENIEUR'),
+    secteurs VARCHAR(255),
+    fonction VARCHAR(255),
+    images VARCHAR(1100)
+);
+
+-- Table Portfolio
+CREATE TABLE Portfolio (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titre VARCHAR(255),
+    description TEXT,
+    image VARCHAR(1100),
+    secteur VARCHAR(255),
+    date VARCHAR(255)
+);
+
+-- Table Profil
+CREATE TABLE Profil (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    image VARCHAR(1100),
+    username VARCHAR(255),
+    bio TEXT,
+    description TEXT,
+    formation TEXT,
+    licences TEXT,
+    competence TEXT
+);

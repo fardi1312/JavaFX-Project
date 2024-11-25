@@ -16,7 +16,7 @@ import java.util.logging.Logger;
  * @author karra
  */
 public class MyConnection {
-    String url="jdbc:mysql://localhost:3306/esprit3a17";
+    String url="jdbc:mysql://localhost:3306/jobespritmassoud";
     String login="root";
     String pwd="";
     private Connection cnx;
@@ -32,6 +32,13 @@ public class MyConnection {
     }
 
     public Connection getCnx() {
+                     try {
+            if (cnx.isClosed()) {
+                cnx = DriverManager.getConnection(url, login, pwd);
+            }
+        } catch (SQLException ex) {
+            System.err.println(ex.getMessage());
+        }
         return cnx;
     }
     

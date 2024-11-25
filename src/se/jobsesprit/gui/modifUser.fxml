@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.jobsesprit.gui.ModifUserController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0e3559" height="103.0" stroke="BLACK" strokeType="INSIDE" width="744.0" />
+      <Label layoutX="10.0" layoutY="10.0" text="Welcome to JobsEsprit" textFill="#efeaea">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="62.0" text="Mon Profil" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="169.1000213623047" endY="435.5" startX="169.1000213623047" startY="103.00001525878906" />
+      <Button fx:id="btimage" layoutX="15.0" layoutY="282.0" mnemonicParsing="false" onAction="#importerimage" prefHeight="26.0" prefWidth="137.0" text="importer une image" />
+      <TextField fx:id="tfname" layoutX="260.0" layoutY="200.0" prefHeight="30.0" prefWidth="168.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #378217;" />
+      <TextField fx:id="tflocation" layoutX="562.0" layoutY="340.0" prefHeight="30.0" prefWidth="168.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #378217;" />
+      <TextField fx:id="tfemail" layoutX="562.0" layoutY="141.0" prefHeight="30.0" prefWidth="168.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #378217;" />
+      <TextField fx:id="tfphone" layoutX="253.0" layoutY="341.0" prefHeight="30.0" prefWidth="168.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #378217;" />
+      <Label layoutX="183.0" layoutY="206.0" prefHeight="18.0" prefWidth="51.0" text="Nom :" />
+      <Label layoutX="178.0" layoutY="347.0" text="Telephone :" />
+      <Label layoutX="460.0" layoutY="142.0" prefHeight="30.0" prefWidth="51.0" text="Email : " />
+      <Label layoutX="458.0" layoutY="206.0" text="Password :" />
+      <Label layoutX="443.0" layoutY="265.0" prefHeight="30.0" prefWidth="118.0" text="Confirmer Password :" />
+      <Label layoutX="447.0" layoutY="341.0" prefHeight="27.0" prefWidth="77.0" text="Localisation :" />
+      <TextField fx:id="password" layoutX="562.0" layoutY="200.0" prefHeight="30.0" prefWidth="168.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #378217;" />
+      <TextField fx:id="conf_pass" layoutX="569.0" layoutY="265.0" prefHeight="30.0" prefWidth="168.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #378217;" />
+      <Button fx:id="btvalider" layoutX="392.0" layoutY="410.0" mnemonicParsing="false" onAction="#valider" prefHeight="52.0" prefWidth="102.0" style="-fx-background-color: #378217;" text="Valider" textFill="#f2eded">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imageview" fitHeight="150.0" fitWidth="168.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="tflastname" layoutX="260.0" layoutY="265.0" prefHeight="30.0" prefWidth="168.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #378217;" />
+      <Label layoutX="183.0" layoutY="273.0" prefHeight="18.0" prefWidth="51.0" text="Prenom :" />
+      <Label layoutX="182.0" layoutY="148.0" text=" Username :" />
+      <TextField fx:id="username" layoutX="260.0" layoutY="142.0" prefHeight="30.0" prefWidth="168.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #378217;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="519.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.jobsesprit.gui.OffreEtudiantController">
+   <children>
+      <BorderPane layoutX="8.0" layoutY="7.0" prefHeight="462.0" prefWidth="675.0">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="852.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" layoutX="190.0" layoutY="1.0" prefHeight="40.0" prefWidth="708.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="25.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="128.0" styleClass="menuItem" text="Dashbord">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Connexion/Connexion4SE3/src/images/homme.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#switchToSceneInsc" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" text="ADD">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Connexion/Connexion4SE3/src/images/add_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" text="Report">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Connexion/Connexion4SE3/src/images/sett.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="142.0" styleClass="menuItem" text="Backup">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Connexion/Connexion4SE3/src/images/user.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="435.0" prefWidth="711.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="18.0" layoutY="4.0" prefHeight="460.0" prefWidth="706.0">
+                     <children>
+                        <ScrollPane prefHeight="464.0" prefWidth="717.0">
+                           <content>
+                              <VBox prefHeight="461.0" prefWidth="690.0">
+                                 <children>
+                                    <GridPane fx:id="OB_gridetu" maxHeight="63.0" maxWidth="114.0" minHeight="0.0" minWidth="10.0" prefHeight="37.0" prefWidth="114.0">
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <VBox.margin>
+                                          <Insets bottom="30.0" top="10.0" />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets top="50.0" />
+                                       </padding>
+                                    </GridPane>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

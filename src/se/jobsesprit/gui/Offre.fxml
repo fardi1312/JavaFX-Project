@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="150.0" prefWidth="150.0" styleClass="offre-item" stylesheets="@g.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.jobsesprit.gui.OffreController">
+   <children>
+      <Label fx:id="OB_titreoffreetu1" layoutX="11.0" layoutY="21.0" prefHeight="20.0" prefWidth="110.0" text="titre d'offre">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="OB_entrepriseoffre" layoutX="5.0" layoutY="50.0" text="nom de lentreprise">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="OB_typeoffreetu" layoutX="4.0" layoutY="76.0" text="type de stage">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="OB_dateoffreetu" layoutX="11.0" layoutY="130.0" prefHeight="20.0" prefWidth="84.0" text="date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="OB_foncoffreetu" layoutX="11.0" layoutY="150.0" text="fonction">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="OB_secoffreetu" layoutX="1.0" layoutY="103.0" prefHeight="20.0" prefWidth="90.0" text="secteur">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="OB_desceoffreetu" layoutX="3.0" layoutY="173.0" prefHeight="50.0" prefWidth="318.0" text="descreption">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="OB_image" fitHeight="150.0" fitWidth="174.0" layoutX="156.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+      <HBox layoutX="-7.0" layoutY="244.0" prefHeight="36.0" prefWidth="142.0">
+         <children>
+            <Button fx:id="OB_buttonlike" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#OB_makelike" prefHeight="44.0" prefWidth="59.0" style="-fx-background-color: white;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets left="20.0" />
+               </opaqueInsets>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../like.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="4.0" layoutY="265.0" prefHeight="31.0" prefWidth="117.0">
+         <children>
+            <Label fx:id="OB_like" prefHeight="17.0" prefWidth="45.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="OB_dislike" prefHeight="17.0" prefWidth="68.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Label fx:id="OB_offreTraduire" layoutX="1.0" layoutY="215.0" prefHeight="36.0" prefWidth="326.0" text="Voir la traduction" />
+      <Button fx:id="btncandi" layoutX="162.0" layoutY="244.0" mnemonicParsing="false" onAction="#GoToCv" prefHeight="31.0" prefWidth="136.0" text="Envoyer candidature" />
+   </children>
+   <padding>
+      <Insets top="20.0" />
+   </padding>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

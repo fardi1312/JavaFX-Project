@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.jobsesprit.gui.ListCovoiturageController">
+   <children>
+      <AnchorPane fx:id="MF_menu_form" prefHeight="525.0" prefWidth="459.0" styleClass="shadow" stylesheets="@cardDesign.css">
+         <children>
+            <ScrollPane fx:id="MF_menu_scrollPane" layoutX="6.0" layoutY="6.0" prefHeight="518.0" prefWidth="456.0" stylesheets="@cardDesign.css">
+              <content>
+                <AnchorPane>
+                     <children>
+                        <GridPane fx:id="MF_menu_gridPane" layoutX="8.0" layoutY="3.0" prefHeight="22.0" prefWidth="109.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+               <styleClass>
+                  <String fx:value="shadow" />
+                  <String fx:value="card" />
+               </styleClass>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="462.0" layoutY="6.0" prefHeight="518.0" prefWidth="224.0" stylesheets="@cardDesign.css">
+         <children>
+            <VBox prefHeight="315.0" prefWidth="224.0">
+               <children>
+                  <HBox prefHeight="45.0" prefWidth="224.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="160.0" text="Username">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="MF_Label_username_pub" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="66.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="224.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="167.0" text="Date de départ">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="MF_Label_heureDepart_pub" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="67.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="55.0" prefHeight="45.0" prefWidth="224.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="185.0" text="Date de départ">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="MF_Label_lieuDepart_pub" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="79.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="100.0" prefHeight="45.0" prefWidth="224.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="185.0" text="Lieu d'arrivée">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="MF_Label_lieuArrivee_pub" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="84.0" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="224.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="187.0" text="Prix">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="MF_Label_prix_pub" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="89.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="224.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="198.0" text="Nombre de places">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="MF_Label_nbrPlaces_pub" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="100.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="215.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="200.0" text="Nombre de places reserve">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="MF_Label_nbrPlacesreserve_pub" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="102.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="269.0" prefHeight="45.0" prefWidth="215.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="202.0" text="Prix ​​total">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="MF_Label_prixtotal_pub" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="104.0" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="276.0" prefHeight="45.0" prefWidth="215.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="203.0" text="UserName">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="MF_label_username" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="103.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button fx:id="MF_confirm_BT" layoutX="53.0" layoutY="376.0" mnemonicParsing="false" onAction="#MF_confirm_BT" prefHeight="25.0" prefWidth="118.0" stylesheets="@cardDesign.css" text="Confirm">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="card" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </Button>
+            <Button fx:id="MF_maps_BT" layoutX="51.0" layoutY="351.0" mnemonicParsing="false" onAction="#MF_maps_BT" prefHeight="25.0" prefWidth="125.0" text="Button" visible="false" />
+         </children>
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="card" />
+         </styleClass>
+      </AnchorPane>
+   </children>
+</AnchorPane>

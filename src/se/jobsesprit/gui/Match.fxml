@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="919.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlleurs.MatchController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="74.0" prefHeight="506.0" prefWidth="240.0" style="-fx-background-radius: 0px 50px 0px 0px;" styleClass="nav-form" stylesheets="@dashboardDesign.css">
+         <children>
+            <Pane layoutX="30.0" layoutY="37.0" prefHeight="30.0" prefWidth="180.0" styleClass="labbtn">
+               <children>
+                  <Label alignment="CENTER" layoutX="71.0" layoutY="7.0" text="Profile" textAlignment="CENTER" textFill="#4b4642">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="22.0" fitWidth="18.0" layoutX="34.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/icons8-utilisateur-24.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <HBox alignment="CENTER_LEFT" layoutX="32.0" layoutY="122.0" prefHeight="30.0" prefWidth="180.0" styleClass="sidebar-btn-text">
+               <children>
+                  <Button fx:id="MF_Offre_BT" mnemonicParsing="false" onAction="#MF_Offre_BT" styleClass="nav-btn" text="Offre  de stage" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8-tableau-de-bord-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="32.0" layoutY="154.0" prefHeight="30.0" prefWidth="180.0" styleClass="sidebar-btn-text">
+               <children>
+                  <Button fx:id="MT_Evnt_BT" mnemonicParsing="false" onAction="#MT_evnt_BT" styleClass="nav-btn" stylesheets="@dashboardDesign.css" text="Evenements  ">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8-users-48.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="31.0" layoutY="185.0" prefHeight="30.0" prefWidth="180.0" styleClass="sidebar-btn-text">
+               <children>
+                  <Button fx:id="MF_Entretien_BT" mnemonicParsing="false" onAction="#MF_Entretien_BT" styleClass="nav-btn" stylesheets="@dashboardDesign.css" text="Entretien">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8-football-24.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="32.0" layoutY="215.0" prefHeight="30.0" prefWidth="180.0" styleClass="sidebar-btn-text">
+               <children>
+                  <Button fx:id="MF_Candidature_BT" mnemonicParsing="false" onAction="#MF_Candidature_BT" styleClass="nav-btn" stylesheets="@dashboardDesign.css" text="Candidature">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/icons8-heures-supplémentaires-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="31.0" layoutY="246.0" prefHeight="30.0" prefWidth="180.0" styleClass="sidebar-btn-text">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="31.0" layoutY="277.0" prefHeight="30.0" prefWidth="180.0" styleClass="sidebar-btn-text">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="32.0" layoutY="307.0" prefHeight="30.0" prefWidth="180.0" styleClass="sidebar-btn-text">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+            <Button fx:id="MF_Logout_BT" layoutX="32.0" layoutY="358.0" mnemonicParsing="false" onAction="#MF_Logout_BT" styleClass="nav-btn" stylesheets="@dashboardDesign.css" text="Logout">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../utils/icons/icons8-log-out-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="44.0" fitWidth="51.0" layoutX="38.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../utils/icons/ziiizz-modified.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="89.0" layoutY="22.0" prefHeight="30.0" prefWidth="99.0" text="JobsEsprit" textFill="#4b4642">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="MF_AnchorView_BT" layoutX="239.0" layoutY="74.0" prefHeight="506.0" prefWidth="677.0" />
+   </children>
+</AnchorPane>
